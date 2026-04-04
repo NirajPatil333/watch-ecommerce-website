@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Rolex Submariner",
+    "price": 49999,
+    "image": "https://imgs.search.brave.com/s4N4DXiBaADvbnuBol7cPKYjf-HnrOci_bPmXZGaoWY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Ym9ic3dhdGNoZXMu/Y29tL3JvbGV4LWJs/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMTIvUm9sZXhf/U3VibWFyaW5lcl81/NTEyXzVEM18xMTk2/LTQtMS5qcGc",
+    "description": "Luxury diving watch with premium finish"
+  },
+  {
+    "id": 2,
+    "name": "Fossil Gen 5 Smartwatch",
+    "price": 51999,
+    "image": "https://imgs.search.brave.com/e973MKm0zpSZaTvAJYyJo3NwVAvBCDmQ_kN42YDjQT4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dW5ib3hpZnkuaW4v/Y2RuL3Nob3AvcHJv/ZHVjdHMvODE3X0Rk/bEtiOEwuX1VMMTUw/MF81MzIxMjMyNC1k/MzFkLTRmOGMtOGRi/Yy1lMzhhYTQ1MjNi/MjIuanBnP2Nyb3A9/Y2VudGVyJmhlaWdo/dD00MzAmdj0xNjk0/OTYyNzE0JndpZHRo/PTQzMA",
+    "description": "Stylish smartwatch with Wear OS"
+  },
+  {
+    "id": 3,
+    "name": "Casio G-Shock",
+    "price": 29999,
+    "image": "https://imgs.search.brave.com/10RMYArSfyE0L9foRZhM_KqTWP3Zod-ZSVFPoAWqFfs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG40/LmV0aG9zd2F0Y2hl/cy5jb20vdGhlLXdh/dGNoLWd1aWRlL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA2/L1RvcC0xMC1DYXNp/by1HLVNob2NrLVdh/dGNoZXMtcG9zdDIz/LmpwZw",
+    "description": "Shock-resistant sports watch"
+  },
+  {
+    "id": 4,
+    "name": "Titan Classic",
+    "price": 22999,
+    "image": "https://imgs.search.brave.com/zWmVcv_n_g0A4j6SU7Ai3219cPAqis9Uion7DC670iU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGl0YW4uY28uaW4v/ZHcvaW1hZ2UvdjIv/QktERF9QUkQvb24v/ZGVtYW5kd2FyZS5z/dGF0aWMvLS9TaXRl/cy10aXRhbi1tYXN0/ZXItY2F0YWxvZy9k/ZWZhdWx0L2R3YzY4/ZmM3OTMvaW1hZ2Vz/L1RpdGFuL0NhdGFs/b2cvOTAxNjlOTDAx/XzEuanBnP3N3PTYw/MCZzaD02MDA",
+    "description": "Elegant watch for formal wear"
+  },
+  {
+    "id": 5,
+    "name": "Fastrack Reflex",
+    "price": 32999,
+    "image": "https://imgs.search.brave.com/C7yrbhtR1v07qOAERVAb417249-hFNtDE_T75tQVkEc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjF4WElNb21xbkwu/anBn",
+    "description": "Trendy youth smartwatch with fitness tracking"
+  },
+  {
+    "id": 6,
+    "name": "Timex Expedition",
+    "price": 31999,
+    "image": "https://imgs.search.brave.com/42VSIjz7NUYrufcj9xUXtJsLVeZObVwl0aDEbC-p7w8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2VhcnBhdHJvbC5j/b20vd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzIvMjAyNC8w/OS90aW1leC1leHBl/ZGl0aW9uLXRpdGFu/aXVtLWdtdC1saWZl/c3R5bGUtanBnLndl/YnA",
+    "description": "Rugged outdoor watch with classic design"
+  }
+]
+
+

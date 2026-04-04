@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch collection</title>
+    <link rel="stylesheet"  href= "{{ url_for('static' , filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <h2 class="logo">Chrono Cart</h2>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/">Products</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="cart">
+            <a href="/cart">🛒
+                <span> {{ cart_count }} </span>
+            </a>
+        </div>
+    </div>
+
+    <h1>Watches Products</h1>
+
+    <div class="container">
+        {% for product in products %}
+        <div class="card">
+            <img src="{{ product.image }}"  alt="{{ product.name }}">
+            <h2>{{ product.name }}</h2>
+            <p>{{product.description}}</p>
+            <p class="price">₹{{product.price}}</p>
+                <a href="/product/{{ product.id}}" class="pro-link"> 
+                    <button> View Details </button>
+                </a>
+        </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

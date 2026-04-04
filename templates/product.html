@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product details</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css') }}">
+</head>
+<body>
+    {% if product %}
+    <h2>{{ product.name}}</h2>
+
+    <div class="product-detail">
+        <img src="{{product.image}}" alt="{{product.name}}" >
+
+        <div class="details">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <p class="price">${{ product.price }}</p>
+            
+            <div class="action-btn">
+                <a href="/add_to_cart/{{product.id}}">
+                    <button id="add">add to Cart</button>
+                </a>
+                <button id="buy">Buy Now</button>
+
+                <div class="back-btn">
+                    <a href="/">
+                        <button>⬅ Back</button>
+                    </a>
+
+                    <div class="qty">
+                        <label>Quantity</label>
+                        <input type="number" value="1" min="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else%}
+    <h2>product not found </h2>
+    {%endif%}
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css') }}">
+</head>
+
+<body>
+    <h1>🛒 Your cart</h1>
+
+    {% if cart %}
+    <div class="container">
+
+        {% for items in cart %}
+        <div class="card">
+            <img src="{{items.image}}">
+            <h2>{{items.name}}</h2>
+            <p>₹{{items.price}}</p>
+
+            <p>Quantity:{{items.quantity}}</p>
+
+            <h2>Total Amount : ₹{{items.price * items.quantity}}</h2>
+
+            <a href="/remove/{{ items.id }}">
+                <button style="background: red;">Remove</button>
+            </a>
+
+        </div>
+        {% endfor %}
+    </div>
+
+    <a href="/clear">
+        <button style="background: gray;" class="cart-action">Clear</button>
+    </a>
+
+    {% else %}
+    <h2>🛒 Your cart is empty</h2>
+    <p style="margin: 15px 0 15px;">Start adding some watches ⌚</p>
+    {% endif%}
+
+    <a href="/"><button class="cart-action">Shop Now</button></a>
+
+</body>
+</html>
