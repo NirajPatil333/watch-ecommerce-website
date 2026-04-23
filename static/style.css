@@ -215,6 +215,102 @@ button:hover{
 .cart-action{
     margin-top: 20px;
 }
+
+
+/* Checkout page */
+.checkout-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+.summary-box,
+.form-box {
+    background: rgba(0,0,0,0.35);
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.summary-box p{
+    margin: 12px ;
+    font-size: 18px;
+}
+.summary-box h2{
+    margin-top: 15px;
+}
+.summary-box h2:last-child{
+    color: #00ffcc;
+}
+
+.form-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+}
+
+.form-box h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.form-box input{
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 90%;
+
+}
+
+.form-box input:focus{
+    outline: none;
+    box-shadow: 0 0 12px #00ffcc;
+}
+
+.form-box button{
+    background: #4caf50;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin: 10px auto 0 auto;
+}
+
+.form-box button:hover{
+    background: #45a045;
+    transform: translateY(-2px);
+}
+
+.summary-box,.form-box {
+    transition: 0.3s;
+}
+.summary-box:hover,.form-box:hover{
+    transform: translateY(-5px);
+}
+.summary-box,.form-box{
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  
+}
 @media (max-width:768px) {
     .container{
         padding: 20px;
@@ -231,6 +327,11 @@ button:hover{
     }
     .action-btn{
         width: 100%;
+    }
+
+    .checkout-container{
+        flex-direction: column;
+        align-items: center;
     }
     
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css') }}">
+</head>
+
+<body>
+    <h1 class="checkout-logo">Checkout</h1>
+
+    <div class="checkout-container">
+        <div class="summary-box">
+
+            <h2>🧾Order Summary</h2>
+
+            {% for item in cart %}
+            <p>{{ item.name }} x {{ item.quantity }}</p>
+            {% endfor %}
+
+            <hr>
+            <h2>Total : ₹{{ total }}</h2>
+
+        </div>
+
+        <div class="form-box">
+            <h2>👤Customer Details</h2>
+
+            <form action="/place_order" method="post">
+                <input type="text" name="name" placeholder="Full Name" required>
+
+                <input type="text" name="address" placeholder="Address" required>
+
+                <input type="text" name="Phone" placeholder="Phone Number" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

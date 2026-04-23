@@ -99,7 +99,26 @@ def remove_item(id):
 @app.route('/clear')
 def clear_item():
     session.pop('cart',None)
+
     return redirect(url_for('cart'))
+
+
+@app.route('/checkout')
+def checkout():
+    cart_items = session.get('cart',[])
+
+    total =0
+    for items in cart_items:
+        total += items['price'] * items['quantity']
+
+    return render_template('checkout.html' , cart=cart_items, total=total)
+
+
+@app.route('/place_order', methods=['post'])
+def place_order():
+    session.pop('cart', None)
+
+    return render_template('success.html')
 
 if __name__ == '__main__':
     app.run(debug=True) 
