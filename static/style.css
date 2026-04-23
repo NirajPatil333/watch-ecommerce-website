@@ -311,6 +311,48 @@ button:hover{
     }
   
 }
+
+/* success page */
+.success-msg{
+    width: 500px;
+    margin: 120px auto;
+    background: rgba(0,0,0,0.35);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    animation: pop 0.5s ease;
+}
+@keyframes pop {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}  
+}
+
+.tick{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4caf50;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+}
+
+.success-msg h2{
+    margin: 20px 0 15px 0;
+}
+
+.success-msg p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.success-msg button{
+    width: 90%;
+}
 @media (max-width:768px) {
     .container{
         padding: 20px;
